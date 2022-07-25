@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Feed | Instagram</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <div class="navigation__column">
+        <a href="feed.html">
+          <!-- Master branch comment -->
+          <img src="images/logo.png" />
+        </a>
+      </div>
+      <div class="navigation__column">
+        <i class="fa fa-search"></i>
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <img
+                src="https://media.istockphoto.com/vectors/plus-icon-logo-vector-id1278687434?k=20&m=1278687434&s=612x612&w=0&h=xilGn7qJ6zVmoNN0ai9rZVPFW81tNP0uN0GXoo-OHVI="
+                style="width: 45px"
+                alt=""
+              />
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              <input
+                type="text"
+                name="for-control me-2"
+                placeholder="Name"
+                id="inpTitle"
+              />
+              <input
+                type="text"
+                name="for-control me-2"
+                placeholder="Age"
+                id="inpDesc"
+              />
+              <input
+                type="text"
+                name="for-control me-2"
+                placeholder="URL Image"
+                id="inpImg"
+              />
+
+              <button id="btnAdd">Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation__column">
+        <ul class="navigations__links">
+          <li class="navigation__list-item">
+            <a href="explore.html" class="navigation__link">
+              <i class="fa fa-compass fa-lg"></i>
+            </a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="#" class="navigation__link">
+              <i class="fa fa-heart-o fa-lg"></i>
+            </a>
+          </li>
+          <li class="navigation__list-item">
+            <a href="profile.html" class="navigation__link">
+              <i class="fa fa-user-o fa-lg"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main id="feed">
+      <div class="photo">
+        <header class="photo__header">
+          <img src="./images/Altynbek.jpg" class="photo__avatar" />
+          <div class="photo__user-info">
+            <span class="photo__author">Bayel&Altynbek</span>
+            <span class="photo__location">Бишкек</span>
+          </div>
+        </header>
+        <img src="./images/LoveIs.jpg" />
+        <div class="photo__info">
+          <div class="photo__actions">
+            <span class="photo__action">
+              <i class="fa fa-heart-o fa-lg"></i>
+            </span>
+            <span class="photo__action">
+              <i class="fa fa-comment-o fa-lg"></i>
+            </span>
+          </div>
+          <span class="photo__likes">999 likes</span>
+          <ul class="photo__comments">
+            <li class="photo__comment">
+              <span class="photo__comment-author">AltynbekUtebaev</span> лайк!
+            </li>
+            <li class="photo__comment">
+              <span class="photo__comment-author">BayelAboba123</span>
+              Disconnect!
+            </li>
+            <li class="photo__comment">
+              <span class="photo__comment-author">Argen</span> wtf
+            </li>
+            <li class="photo__comment">
+              <span class="photo__comment-author">Nurlan</span> Арген,во сколько
+              завтра на лекцию?
+            </li>
+          </ul>
+          <span class="photo__time-ago">2 hours ago</span>
+          <div class="photo__add-comment-container">
+            <textarea name="comment" placeholder="Add a comment..."></textarea>
+            <i class="fa fa-ellipsis-h"></i>
+          </div>
+        </div>
+      </div>
+      <div class="photo">
+        <header class="photo__header">
+          <img src="images/avatar.jpg" class="photo__avatar" />
+          <div class="photo__user-info">
+            <span class="photo__author">Aidana</span>
+            <span class="photo__location">Bishkek</span>
+          </div>
+        </header>
+        <img src="images/feedPhoto.jpg" />
+        <div class="photo__info">
+          <div class="photo__actions">
+            <span class="photo__action">
+              <i class="fa fa-heart-o fa-lg"></i>
+            </span>
+            <span class="photo__action">
+              <i class="fa fa-comment-o fa-lg"></i>
+            </span>
+          </div>
+          <span class="photo__likes">45 likes</span>
+          <ul class="photo__comments">
+            <li class="photo__comment">
+              <span class="photo__comment-author">Altynbek</span> like this!
+            </li>
+            <li class="photo__comment">
+              <span class="photo__comment-author">Bayel</span> like this!
+            </li>
+            <li class="photo__comment">
+              <span class="photo__comment-author">Argen</span> like this!
+            </li>
+            <li class="photo__comment">
+              <span class="photo__comment-author">Muslim</span> like this!
+            </li>
+          </ul>
+          <span class="photo__time-ago">4 hours ago</span>
+          <div class="photo__add-comment-container">
+            <textarea name="comment" placeholder="Add a comment..."></textarea>
+            <i class="fa fa-ellipsis-h"></i>
+          </div>
+        </div>
+      </div>
+    </main>
+    <section class="mx-auto d-flex flex-wrap w-75" id="posts"></section>
+    <footer class="footer">
+      <div class="footer__column">
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">About Us</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Support</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Blog</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Press</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Api</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Jobs</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Privacy</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Terms</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Directory</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#" class="footer__link">Language</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer__column">
+        <span class="footer__copyright">© 2022 Instagram</span>
+      </div>
+    </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
