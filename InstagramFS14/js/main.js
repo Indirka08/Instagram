@@ -53,9 +53,9 @@ function readPosts() {
         // добаляем в наш тег section верстку при каждом цикле
         sectionPosts.innerHTML += ` 
           <div class="card m-4 cardBook" style="width: 18rem">
-          <img id="${item.id}" src="${item.instDesc}" class="card-img-top detailsCard" style="height: 280px" alt="${item.instTitle}" />
+          <img id="${item.id}" src="${item.instImg}" class="card-img-top detailsCard" style="height: 280px" alt="${item.instTitle}" />
         <div class="card-body">
-          <h5 class="card-title">${item.instImg}</h5>
+          <h5 class="card-title">${item.instDesc}</h5>
       
       
           <button class="btn btn-outline-danger btnDelete" id="${item.id}">
