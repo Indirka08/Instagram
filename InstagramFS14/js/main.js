@@ -39,7 +39,7 @@ document.addEventListener("click", (e) => {
     let del_id = e.target.id;
     fetch(`${API}/${del_id}`, {
       method: "DELETE",
-    }).then(() => readInst());
+    }).then(() => readPosts());
   }
 });
 
